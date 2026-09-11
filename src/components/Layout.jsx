@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Leaf, Camera, History, BarChart3, HelpCircle, Menu, X, RefreshCw, Box, Globe, Shield } from 'lucide-react';
+import { Leaf, Camera, History, BarChart3, HelpCircle, Menu, X, RefreshCw, Box, Globe, Shield, Settings2 } from 'lucide-react';
+import { getApiUrl, setCustomApiUrl } from '../services/config';
 
 export default function Layout({ children, activePage, navigateTo, hasLatestResult, backendStatus = 'checking', currentLang = 'en', onLangChange }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,21 +63,34 @@ export default function Layout({ children, activePage, navigateTo, hasLatestResu
                             </div>
                         </div>
 
-                        {/* Connection Pill */}
-                        <div style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '5px',
-                            fontSize: '0.7rem',
-                            fontWeight: 650,
-                            padding: '3px 8px',
-                            borderRadius: '12px',
-                            backgroundColor: backendStatus === 'online' ? 'rgba(16, 185, 129, 0.1)' : (backendStatus === 'offline' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(245, 158, 11, 0.1)'),
-                            color: backendStatus === 'online' ? '#10b981' : (backendStatus === 'offline' ? '#ef4444' : '#f59e0b'),
-                            border: `1px solid ${backendStatus === 'online' ? 'rgba(16, 185, 129, 0.2)' : (backendStatus === 'offline' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(245, 158, 11, 0.2)')}`,
-                            marginLeft: '0.5rem',
-                            whiteSpace: 'nowrap'
-                        }}>
+                        {/* Connection Pill (Clickable for Vercel / Cloud Backend URL Config) */}
+                        <div
+                            onClick={() => {
+                                const current = getApiUrl();
+                                const input = window.prompt(`AgroSense AI Backend Server Settings:\n\nActive Connection: ${current}\n\nEnter custom backend URL (e.g., https://your-server.up.railway.app or http://172.16.1.78:3001), or leave empty for default:`, current);
+                                if (input !== null) {
+                                    setCustomApiUrl(input.trim());
+                                    window.location.reload();
+                                }
+                            }}
+                            title="Click to configure backend AI server endpoint"
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '5px',
+                                fontSize: '0.7rem',
+                                fontWeight: 650,
+                                padding: '3px 8px',
+                                borderRadius: '12px',
+                                backgroundColor: backendStatus === 'online' ? 'rgba(16, 185, 129, 0.1)' : (backendStatus === 'offline' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(245, 158, 11, 0.1)'),
+                                color: backendStatus === 'online' ? '#10b981' : (backendStatus === 'offline' ? '#ef4444' : '#f59e0b'),
+                                border: `1px solid ${backendStatus === 'online' ? 'rgba(16, 185, 129, 0.2)' : (backendStatus === 'offline' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(245, 158, 11, 0.2)')}`,
+                                marginLeft: '0.5rem',
+                                whiteSpace: 'nowrap',
+                                cursor: 'pointer',
+                                transition: 'transform 0.15s ease'
+                            }}
+                        >
                             <span style={{
                                 width: '6px',
                                 height: '6px',
@@ -84,7 +98,7 @@ export default function Layout({ children, activePage, navigateTo, hasLatestResu
                                 borderRadius: '50%',
                                 display: 'inline-block'
                             }}></span>
-                            {backendStatus === 'online' ? 'PyTorch & API Online' : (backendStatus === 'offline' ? 'API Offline' : 'Connecting...')}
+                            {backendStatus === 'online' ? 'PyTorch & API Online' : (backendStatus === 'offline' ? 'API Offline (Click to configure)' : 'Connecting...')}
                         </div>
                     </div>
 
