@@ -1,0 +1,77 @@
+{
+  "modelName": "Groundnut MobileNetV3-Small",
+  "modelVersion": "v1.0-real",
+  "dataset": "Dataset of Groundnut Plant Leaf Images (Mendeley Data 10.17632/22p2vcbxfk.3)",
+  "testAccuracy": 90.28,
+  "macroF1": 91.9,
+  "weightedF1": 90.25,
+  "perClass": {
+    "Early Leaf Spot": {
+      "precision": 87.8,
+      "recall": 80.6,
+      "f1": 84.05,
+      "support": 134
+    },
+    "Healthy": {
+      "precision": 83.66,
+      "recall": 91.43,
+      "f1": 87.37,
+      "support": 140
+    },
+    "Late Leaf Spot": {
+      "precision": 98.1,
+      "recall": 99.04,
+      "f1": 98.56,
+      "support": 104
+    },
+    "Nutrition Deficiency": {
+      "precision": 95.83,
+      "recall": 92.0,
+      "f1": 93.88,
+      "support": 50
+    },
+    "Rust": {
+      "precision": 97.06,
+      "recall": 94.29,
+      "f1": 95.65,
+      "support": 35
+    }
+  },
+  "confusionMatrix": [
+    [
+      108,
+      23,
+      1,
+      2,
+      0
+    ],
+    [
+      12,
+      128,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      103,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      46,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      33
+    ]
+  ]
+}
