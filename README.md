@@ -18,13 +18,14 @@ The system features complete multilingual localization (English, Telugu, Hindi) 
 
 ---
 
-## 🌟 Key Features
+## 📱 Android Release APK
 
-1. **True AI Vision Model**: Trained on genuine leaf imagery across 7 distinct agricultural classes (Black Spot, Downy Mildew / Mosaic, Early Leaf Spot, Healthy Foliage, Late Leaf Spot, Nutrition Deficiency, Rust).
-2. **Dual Bioclimatic Attribution Engine**: Computes Vapor Pressure Deficit (VPD) and Pathogen Moisture Envelope Risk without altering the authoritative neural classification.
-3. **Multilingual Speech Synthesis**: Interactive voice readout of diagnostic guidance in English, Telugu, and Hindi.
-4. **Offline First Mobile APK**: Full Android release APK built with Capacitor.
-5. **1-Click Netlify / Vercel Deployment**: Pre-configured `netlify.toml`, `_redirects`, and `vercel.json`.
+The signed production release APK is compiled and ready for installation on any physical Android smartphone:
+- **Direct Download (Web)**: [Download AgroSense-AI-v2.0-release.apk](https://los-fisher-fighter-interval.trycloudflare.com/uploads/AgroSense-AI-v2.0-release.apk)
+- **Local File Path**: `android/app/build/outputs/apk/release/app-release.apk`
+- **File Size**: 6.8 MB (Signed with release keystore)
+- **Features**: Native Android camera integration, offline-first UI, Telugu & Hindi voice synthesis, and auto-connection to the Cloudflare AI backend.
+
 
 ---
 
