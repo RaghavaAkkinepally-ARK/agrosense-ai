@@ -1,5 +1,8 @@
 # AgroSense AI — Real-World Multi-Crop Foliar Disease Diagnostics
 
+pitchdeck above
+app in apk available
+
 
 
 **DeVert-A-Thon 2026 (Problem Statement DVPS07)**
@@ -37,11 +40,6 @@ The signed production release APK is compiled and ready for installation on any 
 
 ---
 
-## 🚀 1-Click Netlify Deployment
-
-Click the button below to deploy this repository to Netlify:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaghavaAkkinepally-ARK/agrosense-ai)
 
 Or follow the quick manual deployment steps in Section 3.
    - **`http://<YOUR_LAN_IP>:3001`**: For physical Android USB testing connected to the same Wi-Fi router.
