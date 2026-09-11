@@ -1,6 +1,6 @@
 # AgroSense AI — Real-World Multi-Crop Foliar Disease Diagnostics
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaghavaAkkinepally-ARK/agrosense-ai)
+
 
 **DeVert-A-Thon 2026 (Problem Statement DVPS07)**
 
