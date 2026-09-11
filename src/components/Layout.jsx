@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Leaf, Camera, History, BarChart3, HelpCircle, Menu, X, RefreshCw, Box, Globe, Shield, Settings2 } from 'lucide-react';
-import { getApiUrl, setCustomApiUrl } from '../services/config';
+import { getApiUrl, setCustomApiUrl, DEFAULT_PUBLIC_AI_SERVER } from '../services/config';
 
 export default function Layout({ children, activePage, navigateTo, hasLatestResult, backendStatus = 'checking', currentLang = 'en', onLangChange }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,7 +67,9 @@ export default function Layout({ children, activePage, navigateTo, hasLatestResu
                         <div
                             onClick={() => {
                                 const current = getApiUrl();
-                                const input = window.prompt(`AgroSense AI Backend Server Settings:\n\nActive Connection: ${current}\n\nEnter custom backend URL (e.g., https://your-server.up.railway.app or http://172.16.1.78:3001), or leave empty for default:`, current);
+                                const isCloud = window.location.protocol === 'https:' && !window.location.hostname.includes('localhost');
+                                const suggested = isCloud && (current.includes('localhost') || current.includes('127.0.0.1')) ? DEFAULT_PUBLIC_AI_SERVER : current;
+                                const input = window.prompt(`AgroSense AI Backend Server Settings:\n\nActive Connection: ${current}\n\nEnter backend URL (Recommended for Netlify: ${DEFAULT_PUBLIC_AI_SERVER}), or leave empty for default:`, suggested);
                                 if (input !== null) {
                                     setCustomApiUrl(input.trim());
                                     window.location.reload();

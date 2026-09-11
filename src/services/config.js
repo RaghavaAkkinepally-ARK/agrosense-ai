@@ -7,7 +7,17 @@ export function getApiUrl() {
     if (typeof window !== 'undefined' && window.localStorage) {
         const customUrl = window.localStorage.getItem('agrosense_api_url');
         if (customUrl && customUrl.trim()) {
-            return customUrl.trim().endsWith('/') ? customUrl.trim().slice(0, -1) : customUrl.trim();
+            const cleanUrl = customUrl.trim().endsWith('/') ? customUrl.trim().slice(0, -1) : customUrl.trim();
+            const isHttpsPage = window.location.protocol === 'https:';
+            const isLocalTarget = cleanUrl.includes('localhost') || cleanUrl.includes('127.0.0.1') || cleanUrl.startsWith('http://');
+
+            // If we are on an HTTPS web page (e.g. Netlify/Vercel), browsers strictly block plain HTTP to localhost
+            if (isHttpsPage && isLocalTarget) {
+                console.warn('[API Config] Ignoring insecure HTTP localhost URL on HTTPS site. Falling back to secure AI tunnel.');
+                window.localStorage.removeItem('agrosense_api_url');
+            } else {
+                return cleanUrl;
+            }
         }
     }
 

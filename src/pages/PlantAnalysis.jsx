@@ -264,7 +264,7 @@ export default function PlantAnalysis({ onAnalysisComplete, isAnalyzing, selecte
         const isNetworkErr = err.message?.toLowerCase().includes('failed to fetch') || err.message?.toLowerCase().includes('network') || err.message?.toLowerCase().includes('timed out');
         if (isNetworkErr) {
           const endpoint = getApiUrl();
-          alert(`Server Connection Error: Could not reach the AI backend at:\n${endpoint}\n\nQuick Fix:\n1. If using the mobile app, tap the top connection badge to enter your PC's IP or public tunnel URL.\n2. Or open the web app directly in your mobile browser at: http://172.16.1.78:3001`);
+          alert(`Server Connection Error: Could not reach the AI backend at:\n${endpoint}\n\nQuick Fix:\nTap the top status badge (where it says 'API Offline') and enter the secure AI tunnel URL:\nhttps://los-fisher-fighter-interval.trycloudflare.com`);
         } else {
           alert(err.message || 'Analysis could not be completed. Please check your network connection.');
         }
