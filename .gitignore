@@ -6,11 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+server_logs/
 
 node_modules
 dist
 dist-ssr
 *.local
+.env
 
 # Python
 __pycache__/
@@ -27,7 +29,15 @@ ENV/
 *.tar.gz
 ml/dataset/raw/
 ml/dataset/processed/
+ml/dataset/multicrop/
+ml/dataset/user_samples/
 ml/dataset/groundnut_dataset.zip
+server/uploads/leaf-*
+
+# Scratch and unrelated
+roadpulse-ai/
+tunnel_daemon.py
+tunnel_url.txt
 
 # Android Build Outputs (Keep source, ignore binaries)
 android/.gradle/

@@ -1,5 +1,88 @@
 [
   {
+    "id": "INF-95521799",
+    "timestamp": "2026-09-11T06:08:53.098Z",
+    "crop": "Field & Oilseed Agricultural Crops",
+    "uploadedImage": "/uploads/leaf-1789106932771-911168896.jpeg",
+    "diagnosisType": "disease",
+    "diseaseName": "Late Leaf Spot (Phaeoisariopsis)",
+    "originalClassName": "Late Leaf Spot",
+    "scientificName": "Phaeoisariopsis personata / Nothopassalora spp.",
+    "pathogen": "Fungal (Phaeoisariopsis spp. / Nothopassalora spp.)",
+    "badge": "Severe Fungal Disease",
+    "confidence": 70.1,
+    "classProbabilities": {
+      "Black Spot": 0,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 22.2,
+      "Healthy": 0.05,
+      "Late Leaf Spot": 70.1,
+      "Nutrition Deficiency": 0.02,
+      "Rust": 7.64
+    },
+    "severity": {
+      "severity_score": 29.2,
+      "severity_label": "Severe",
+      "affected_area_percentage": 29.2,
+      "methodology": "HSV adaptive foliar lesion segmentation (459480/1570937 px)"
+    },
+    "symptoms": "Dark brown to carbon-black circular lesions predominantly on the lower leaf surface, with minimal yellow halos, causing rapid canopy defoliation.",
+    "symptomsList": [
+      "Nearly circular dark brown to carbon-black lesions (1 to 6 mm) appearing heavily on both leaf surfaces.",
+      "Yellow chlorotic halos are minimal or diffuse compared to Early Leaf Spot.",
+      "Concentric rings of fungal fruiting bodies visible on lower leaf surfaces under magnification.",
+      "Rapid canopy defoliation from base upwards, leaving denuded stems and reducing yields."
+    ],
+    "managementAdvice": [
+      "Avoid night-time sprinkler irrigation which extends nocturnal leaf wetness periods.",
+      "Collect and destroy diseased crop debris post-harvest to reduce overwintering spore reservoirs.",
+      "Foliar bio-control spray with Pseudomonas fluorescens @ 2.5 kg/ha in 500 L water."
+    ],
+    "preventionAdvice": [
+      "Select disease-tolerant crop cultivars recommended by national research institutes.",
+      "Balance NPK fertilization; avoid excess nitrogen that creates dense, disease-prone canopies."
+    ],
+    "chemicalGuidance": "Spray Hexaconazole 5% EC @ 1000 ml/ha (2 ml/L water) or Chlorothalonil 75% WP @ 1000 g/ha (2 g/L) or Tebuconazole 25.9% EC @ 500-750 ml/ha.",
+    "chemicalSafetyDisclaimer": "Wear protective chemical gloves and mask. Observe pre-harvest intervals.",
+    "sources": [
+      {
+        "title": "Foliar Fungal Blight and Leaf Spot Management",
+        "institution": "ICAR Research Manual",
+        "url": "https://icar.org.in"
+      }
+    ],
+    "language": "en",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 28,
+        "humidity": 72,
+        "soilMoisture": 32,
+        "lightIntensity": 65000,
+        "canopyTemp": 27,
+        "leafWetness": 45,
+        "rainfall": 0,
+        "windSpeed": 2.5
+      },
+      "derived": {
+        "vpd": 1.06,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 59,
+        "pathogenRiskLevel": "Moderate",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  },
+  {
     "id": "INF-48177043",
     "timestamp": "2026-09-11T06:01:44.964Z",
     "crop": "Cucurbits & Broadleaf Vegetables",

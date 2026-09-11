@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "classes": {
+    "Early Leaf Spot": {
+      "total": 885,
+      "train": 619,
+      "val": 132,
+      "test": 134
+    },
+    "Healthy": {
+      "total": 929,
+      "train": 650,
+      "val": 139,
+      "test": 140
+    },
+    "Late Leaf Spot": {
+      "total": 689,
+      "train": 482,
+      "val": 103,
+      "test": 104
+    },
+    "Nutrition Deficiency": {
+      "total": 329,
+      "train": 230,
+      "val": 49,
+      "test": 50
+    },
+    "Rust": {
+      "total": 226,
+      "train": 158,
+      "val": 33,
+      "test": 35
+    }
+  },
+  "total_images": 3058
+}
