@@ -38,6 +38,8 @@ server/uploads/leaf-*
 roadpulse-ai/
 tunnel_daemon.py
 tunnel_url.txt
+cloudflared.exe
+
 
 # Android Build Outputs (Keep source, ignore binaries)
 android/.gradle/

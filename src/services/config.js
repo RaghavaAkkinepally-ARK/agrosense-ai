@@ -1,5 +1,7 @@
 import { Capacitor } from '@capacitor/core';
 
+export const DEFAULT_PUBLIC_AI_SERVER = 'https://los-fisher-fighter-interval.trycloudflare.com';
+
 export function getApiUrl() {
     // 1. Check user-configured override in localStorage
     if (typeof window !== 'undefined' && window.localStorage) {
@@ -17,24 +19,30 @@ export function getApiUrl() {
 
     // 3. Native Capacitor Mobile Target (Android APK)
     if (typeof window !== 'undefined' && Capacitor.isNativePlatform()) {
-        return 'http://172.16.1.78:3001';
+        return DEFAULT_PUBLIC_AI_SERVER;
     }
 
     // 4. Web Browser Fallback
     if (typeof window !== 'undefined' && window.location) {
-        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const hostname = window.location.hostname;
+        const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
         if (isLocalhost) {
             return 'http://localhost:3001';
         }
-        // If accessed via port 5173 on network IP, map to API port 3001
+        // If accessed via port 5173 on local network IP, map to API port 3001
         if (window.location.port === '5173') {
             return `${window.location.protocol}//${window.location.hostname}:3001`;
+        }
+        // If accessed from Netlify, Vercel, or external cloud domain, route to the live Cloudflare AI tunnel
+        if (hostname.includes('netlify.app') || hostname.includes('vercel.app') || hostname.includes('github.io')) {
+            return DEFAULT_PUBLIC_AI_SERVER;
         }
         return window.location.origin;
     }
 
-    return 'http://172.16.1.78:3001';
+    return DEFAULT_PUBLIC_AI_SERVER;
 }
+
 
 export function setCustomApiUrl(url) {
     if (typeof window !== 'undefined' && window.localStorage) {

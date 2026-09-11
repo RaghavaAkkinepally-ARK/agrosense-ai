@@ -1,1 +1,4 @@
-/*    /index.html   200
+/api/*      https://los-fisher-fighter-interval.trycloudflare.com/api/:splat      200!
+/uploads/*  https://los-fisher-fighter-interval.trycloudflare.com/uploads/:splat  200!
+/*          /index.html                                                           200
+

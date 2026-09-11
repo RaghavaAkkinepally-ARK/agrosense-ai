@@ -30,8 +30,9 @@ export default function App() {
     const fetchAnalyses = async () => {
       try {
         const response = await fetch(`${getApiUrl()}/api/analyses`);
-        if (!response.ok) {
-          throw new Error('API server status check failed');
+        const contentType = response.headers.get('content-type') || '';
+        if (!response.ok || !contentType.includes('application/json')) {
+          throw new Error('API server status check failed or non-JSON returned');
         }
         const data = await response.json();
         setLogs(data);
@@ -59,7 +60,8 @@ export default function App() {
     const checkStatus = async () => {
       try {
         const res = await fetch(`${getApiUrl()}/api/status`);
-        if (res.ok) {
+        const contentType = res.headers.get('content-type') || '';
+        if (res.ok && contentType.includes('application/json')) {
           setBackendStatus('online');
         } else {
           setBackendStatus('offline');

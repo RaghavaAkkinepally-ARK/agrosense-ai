@@ -52,7 +52,26 @@ export async function analyzeCropLeaf(imageFile, language = 'en', onStage = () =
     clearTimeout(stageTimer3);
     clearTimeout(stageTimer4);
 
-    const data = await response.json();
+    const contentType = response.headers.get('content-type') || '';
+    if (contentType.includes('text/html')) {
+      const err = new Error(
+        `Cloud AI Connection Needed: The request reached a static web host (${baseUrl}) instead of the AI inference engine.\n\n` +
+        `Please click the 'API Status' badge in the top header to configure or verify your AI backend URL (e.g. ${baseUrl}).`
+      );
+      err.isRoutingError = true;
+      throw err;
+    }
+
+    let data;
+    try {
+      data = await response.json();
+    } catch (parseErr) {
+      const err = new Error(
+        `Invalid server response format. Please verify your backend server endpoint in the top status bar.`
+      );
+      err.isRoutingError = true;
+      throw err;
+    }
 
     if (!response.ok) {
       if (response.status === 422 && (data.errorType === 'IMAGE_QUALITY_INSUFFICIENT' || data.errorType === 'OUT_OF_DISTRIBUTION')) {

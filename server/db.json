@@ -1,5 +1,94 @@
 [
   {
+    "id": "INF-44025395",
+    "timestamp": "2026-09-11T06:24:41.711Z",
+    "crop": "Horticulture & Foliar Crops",
+    "uploadedImage": "/uploads/leaf-1789107881604-169062161.jpeg",
+    "diagnosisType": "disease",
+    "diseaseName": "Black Spot Disease",
+    "originalClassName": "Black Spot",
+    "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+    "pathogen": "Fungal (Diplocarpon rosae / Alternaria / Septoria spp.)",
+    "badge": "Foliar Fungal Necrosis",
+    "confidence": 93.1,
+    "classProbabilities": {
+      "Black Spot": 93.14,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 0,
+      "Healthy": 0.01,
+      "Late Leaf Spot": 1.65,
+      "Nutrition Deficiency": 0,
+      "Rust": 5.2
+    },
+    "severity": {
+      "severity_score": 34.7,
+      "severity_label": "Severe",
+      "affected_area_percentage": 34.7,
+      "methodology": "HSV adaptive foliar lesion segmentation (13179/38012 px)"
+    },
+    "symptoms": "Circular black spots with feathery or fringed borders surrounded by bright yellow chlorosis, causing progressive leaf drop and cane defoliation.",
+    "symptomsList": [
+      "Distinct circular black to dark-brown spots with irregular, feathery or fringed margins on upper leaf surfaces.",
+      "Foliage around the black spots turns chlorotic bright yellow, spreading outward from lesions.",
+      "Severe progressive leaf drop starting from lower branches and moving upward, leaving bare canes and stems.",
+      "Weakens plant vitality and stunts flowering and vegetative vigor."
+    ],
+    "managementAdvice": [
+      "Prune and safely discard all infected leaves and fallen debris; do not allow infected foliage to overwinter.",
+      "Prune lower stems to improve air circulation and prevent soil-splash spore transmission.",
+      "Switch strictly to ground-level or drip irrigation in the morning hours so foliage dries quickly."
+    ],
+    "preventionAdvice": [
+      "Select certified disease-tolerant varieties adapted to regional humidity.",
+      "Apply bio-fungicidal sprays with Bacillus subtilis or potassium bicarbonate solutions early in season.",
+      "Ensure generous spacing between plants to maximize sunlight exposure."
+    ],
+    "chemicalGuidance": "Spray Chlorothalonil 75% WP @ 2 g/L or Myclobutanil 10% WP @ 1 g/L or Mancozeb 75% WP @ 2.5 g/L at 10-14 day intervals during damp conditions.",
+    "chemicalSafetyDisclaimer": "Wear chemical safety gloves and goggles. Avoid midday applications in strong sun to prevent foliar scorching.",
+    "sources": [
+      {
+        "title": "Identification and Integrated Control of Black Spot Disease",
+        "institution": "ICAR-IIHR (Indian Institute of Horticultural Research)",
+        "url": "https://iihr.icar.gov.in"
+      },
+      {
+        "title": "Horticultural Foliar Pathology Advisory",
+        "institution": "TNAU Horticulture Portal",
+        "url": "http://agritech.tnau.ac.in"
+      }
+    ],
+    "language": "en",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 28,
+        "humidity": 72,
+        "soilMoisture": 32,
+        "lightIntensity": 65000,
+        "canopyTemp": 27,
+        "leafWetness": 45,
+        "rainfall": 0,
+        "windSpeed": 2.5
+      },
+      "derived": {
+        "vpd": 1.06,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 59,
+        "pathogenRiskLevel": "Moderate",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  },
+  {
     "id": "INF-95521799",
     "timestamp": "2026-09-11T06:08:53.098Z",
     "crop": "Field & Oilseed Agricultural Crops",
