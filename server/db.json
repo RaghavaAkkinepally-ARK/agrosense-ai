@@ -1,0 +1,358 @@
+[
+  {
+    "id": "INF-49752761",
+    "timestamp": "2026-09-11T05:45:17.872Z",
+    "crop": "Horticulture & Foliar Crops",
+    "uploadedImage": "/uploads/leaf-1789105517796-372753320.jpeg",
+    "diagnosisType": "disease",
+    "diseaseName": "Black Spot Disease",
+    "originalClassName": "Black Spot",
+    "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+    "pathogen": "Fungal (Diplocarpon rosae / Alternaria / Septoria spp.)",
+    "badge": "Foliar Fungal Necrosis",
+    "confidence": 93.1,
+    "classProbabilities": {
+      "Black Spot": 93.14,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 0,
+      "Healthy": 0.01,
+      "Late Leaf Spot": 1.65,
+      "Nutrition Deficiency": 0,
+      "Rust": 5.2
+    },
+    "severity": {
+      "severity_score": 34.7,
+      "severity_label": "Severe",
+      "affected_area_percentage": 34.7,
+      "methodology": "HSV adaptive foliar lesion segmentation (13179/38012 px)"
+    },
+    "symptoms": "Circular black spots with feathery or fringed borders surrounded by bright yellow chlorosis, causing progressive leaf drop and cane defoliation.",
+    "symptomsList": [
+      "Distinct circular black to dark-brown spots with irregular, feathery or fringed margins on upper leaf surfaces.",
+      "Foliage around the black spots turns chlorotic bright yellow, spreading outward from lesions.",
+      "Severe progressive leaf drop starting from lower branches and moving upward, leaving bare canes and stems.",
+      "Weakens plant vitality and stunts flowering and vegetative vigor."
+    ],
+    "managementAdvice": [
+      "Prune and safely discard all infected leaves and fallen debris; do not allow infected foliage to overwinter.",
+      "Prune lower stems to improve air circulation and prevent soil-splash spore transmission.",
+      "Switch strictly to ground-level or drip irrigation in the morning hours so foliage dries quickly."
+    ],
+    "preventionAdvice": [
+      "Select certified disease-tolerant varieties adapted to regional humidity.",
+      "Apply bio-fungicidal sprays with Bacillus subtilis or potassium bicarbonate solutions early in season.",
+      "Ensure generous spacing between plants to maximize sunlight exposure."
+    ],
+    "chemicalGuidance": "Spray Chlorothalonil 75% WP @ 2 g/L or Myclobutanil 10% WP @ 1 g/L or Mancozeb 75% WP @ 2.5 g/L at 10-14 day intervals during damp conditions.",
+    "chemicalSafetyDisclaimer": "Wear chemical safety gloves and goggles. Avoid midday applications in strong sun to prevent foliar scorching.",
+    "sources": [
+      {
+        "title": "Identification and Integrated Control of Black Spot Disease",
+        "institution": "ICAR-IIHR (Indian Institute of Horticultural Research)",
+        "url": "https://iihr.icar.gov.in"
+      },
+      {
+        "title": "Horticultural Foliar Pathology Advisory",
+        "institution": "TNAU Horticulture Portal",
+        "url": "http://agritech.tnau.ac.in"
+      }
+    ],
+    "language": "en",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 28,
+        "humidity": 72,
+        "soilMoisture": 32,
+        "lightIntensity": 65000,
+        "canopyTemp": 27,
+        "leafWetness": 45,
+        "rainfall": 0,
+        "windSpeed": 2.5
+      },
+      "derived": {
+        "vpd": 1.06,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 59,
+        "pathogenRiskLevel": "Moderate",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  },
+  {
+    "id": "INF-78941097",
+    "timestamp": "2026-09-11T05:43:05.397Z",
+    "crop": "Horticulture & Foliar Crops",
+    "uploadedImage": "/uploads/leaf-1789105385375-877182345.jpg",
+    "diagnosisType": "disease",
+    "diseaseName": "काला धब्बा रोग (ब्लैक स्पॉट)",
+    "originalClassName": "Black Spot",
+    "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+    "pathogen": "Fungal (Diplocarpon rosae / Alternaria / Septoria spp.)",
+    "badge": "पत्ती का काला कवक रोग",
+    "confidence": 93.9,
+    "classProbabilities": {
+      "Black Spot": 93.88,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 0,
+      "Healthy": 0.01,
+      "Late Leaf Spot": 1.31,
+      "Nutrition Deficiency": 0,
+      "Rust": 4.8
+    },
+    "severity": {
+      "severity_score": 34.8,
+      "severity_label": "Severe",
+      "affected_area_percentage": 34.8,
+      "methodology": "HSV adaptive foliar lesion segmentation (13260/38102 px)"
+    },
+    "symptoms": "पत्तियों पर अनियमित या पंखदार किनारों वाले गोल काले धब्बे बनते हैं। धब्बों के चारों ओर पत्ती पीली पड़ जाती है और तेजी से गिर जाती है, जिससे पौधे पर केवल टहनियां बचती हैं।",
+    "symptomsList": [
+      "Distinct circular black to dark-brown spots with irregular, feathery or fringed margins on upper leaf surfaces.",
+      "Foliage around the black spots turns chlorotic bright yellow, spreading outward from lesions.",
+      "Severe progressive leaf drop starting from lower branches and moving upward, leaving bare canes and stems.",
+      "Weakens plant vitality and stunts flowering and vegetative vigor."
+    ],
+    "managementAdvice": [
+      "गिरी हुई और ग्रसित पत्तियों को इकट्ठा करके तुरंत नष्ट करें।",
+      "पौधों के निचले हिस्से की छंटाई करें ताकि हवा और धूप का प्रवाह बना रहे।",
+      "हमेशा सुबह के समय पौधों की जड़ों में पानी दें, पत्तियों पर छिड़काव न करें।"
+    ],
+    "preventionAdvice": [
+      "रोग प्रतिरोधी स्वस्थ पौधों और किस्मों का चयन करें।",
+      "बैसिलस सबटिलिस या पोटैशियम बाइकार्बोनेट का निवारक छिड़काव करें।",
+      "पौधों के बीच पर्याप्त दूरी बनाए रखें।"
+    ],
+    "chemicalGuidance": "क्लोरोथैलोनिल 75% WP (2 ग्राम/लीटर) या माइक्लोब्यूटानिल 10% WP (1 ग्राम/लीटर) या मैंकोजेब 75% WP (2.5 ग्राम/लीटर) का 10-14 दिनों के अंतराल पर छिड़काव करें।",
+    "chemicalSafetyDisclaimer": "दस्ताने और चश्मा पहनें। तेज धूप में दोपहर के समय दवा न छिड़कें।",
+    "sources": [
+      {
+        "title": "Identification and Integrated Control of Black Spot Disease",
+        "institution": "ICAR-IIHR (Indian Institute of Horticultural Research)",
+        "url": "https://iihr.icar.gov.in"
+      },
+      {
+        "title": "Horticultural Foliar Pathology Advisory",
+        "institution": "TNAU Horticulture Portal",
+        "url": "http://agritech.tnau.ac.in"
+      }
+    ],
+    "language": "hi",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 29.5,
+        "humidity": 84,
+        "soilMoisture": 38,
+        "lightIntensity": 58000,
+        "canopyTemp": 28,
+        "leafWetness": 65,
+        "rainfall": 6,
+        "windSpeed": 3.2
+      },
+      "derived": {
+        "vpd": 0.66,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 81,
+        "pathogenRiskLevel": "Severe",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  },
+  {
+    "id": "INF-25437855",
+    "timestamp": "2026-09-11T05:43:05.370Z",
+    "crop": "Horticulture & Foliar Crops",
+    "uploadedImage": "/uploads/leaf-1789105385332-115973820.jpg",
+    "diagnosisType": "disease",
+    "diseaseName": "నల్ల మచ్చ తెగులు (బ్లాక్ స్పాట్)",
+    "originalClassName": "Black Spot",
+    "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+    "pathogen": "Fungal (Diplocarpon rosae / Alternaria / Septoria spp.)",
+    "badge": "నల్ల మచ్చ శిలీంద్ర తెగులు",
+    "confidence": 93.9,
+    "classProbabilities": {
+      "Black Spot": 93.88,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 0,
+      "Healthy": 0.01,
+      "Late Leaf Spot": 1.31,
+      "Nutrition Deficiency": 0,
+      "Rust": 4.8
+    },
+    "severity": {
+      "severity_score": 34.8,
+      "severity_label": "Severe",
+      "affected_area_percentage": 34.8,
+      "methodology": "HSV adaptive foliar lesion segmentation (13260/38102 px)"
+    },
+    "symptoms": "ఆకుల పైభాగంలో విసనకర్ర అంచుల వంటి నల్లటి గుండ్రటి మచ్చలు ఏర్పడతాయి. మచ్చల చుట్టూ ఆకు పసుపు రంగులోకి మారి వేగంగా రాలిపోతుంది. కొమ్మలు మోడువారిపోతాయి.",
+    "symptomsList": [
+      "Distinct circular black to dark-brown spots with irregular, feathery or fringed margins on upper leaf surfaces.",
+      "Foliage around the black spots turns chlorotic bright yellow, spreading outward from lesions.",
+      "Severe progressive leaf drop starting from lower branches and moving upward, leaving bare canes and stems.",
+      "Weakens plant vitality and stunts flowering and vegetative vigor."
+    ],
+    "managementAdvice": [
+      "రాలిపోయిన మరియు వ్యాధి సోకిన ఆకులను ఏరి వెంటనే కాల్చివేయండి.",
+      "మొక్కల అడుగుభాగపు కొమ్మలను కత్తిరించి గాలి, ఎండ ధారాళంగా తగిలేలా చూడండి.",
+      "ఆకులపై కాకుండా మొక్క మొదళ్ల వద్ద మాత్రమే ఉదయపు వేళల్లో నీరు పెట్టండి."
+    ],
+    "preventionAdvice": [
+      "తేమను మరియు మచ్చ తెగుళ్లను తట్టుకునే నాణ్యమైన విత్తనాలు లేదా రకాలను ఎంచుకోండి.",
+      "బేసిల్లస్ సబ్టిలిస్ లేదా పొటాషియం బైకార్బోనేట్ ద్రావణాన్ని ముందస్తుగా పిచికారీ చేయండి.",
+      "మొక్కల మధ్య తగినంత ఎడం ఉండేలా నాటండి."
+    ],
+    "chemicalGuidance": "లీటరు నీటికి 2 గ్రాముల క్లోరోథలోనిల్ (Chlorothalonil 75% WP) లేదా 1 గ్రాము మైక్లోబుటానిల్ (Myclobutanil 10% WP) లేదా 2.5 గ్రాముల మాంకోజెబ్ కలిపి 10-14 రోజుల వ్యవధిలో పిచికారీ చేయండి.",
+    "chemicalSafetyDisclaimer": "పిచికారీ చేసేటప్పుడు చేతి తొడుగులు మరియు కళ్లజోడు ధరించండి. తీవ్రమైన ఎండలో మందులు పిచికారీ చేయవద్దు.",
+    "sources": [
+      {
+        "title": "Identification and Integrated Control of Black Spot Disease",
+        "institution": "ICAR-IIHR (Indian Institute of Horticultural Research)",
+        "url": "https://iihr.icar.gov.in"
+      },
+      {
+        "title": "Horticultural Foliar Pathology Advisory",
+        "institution": "TNAU Horticulture Portal",
+        "url": "http://agritech.tnau.ac.in"
+      }
+    ],
+    "language": "te",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 29.5,
+        "humidity": 84,
+        "soilMoisture": 38,
+        "lightIntensity": 58000,
+        "canopyTemp": 28,
+        "leafWetness": 65,
+        "rainfall": 6,
+        "windSpeed": 3.2
+      },
+      "derived": {
+        "vpd": 0.66,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 81,
+        "pathogenRiskLevel": "Severe",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  },
+  {
+    "id": "INF-40500292",
+    "timestamp": "2026-09-11T05:42:54.542Z",
+    "crop": "Horticulture & Foliar Crops",
+    "uploadedImage": "/uploads/leaf-1789105374499-632549881.jpg",
+    "diagnosisType": "disease",
+    "diseaseName": "నల్ల మచ్చ తెగులు (బ్లాక్ స్పాట్)",
+    "originalClassName": "Black Spot",
+    "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+    "pathogen": "Fungal (Diplocarpon rosae / Alternaria / Septoria spp.)",
+    "badge": "నల్ల మచ్చ శిలీంద్ర తెగులు",
+    "confidence": 93.9,
+    "classProbabilities": {
+      "Black Spot": 93.88,
+      "Downy Mildew - Mosaic": 0,
+      "Early Leaf Spot": 0,
+      "Healthy": 0.01,
+      "Late Leaf Spot": 1.31,
+      "Nutrition Deficiency": 0,
+      "Rust": 4.8
+    },
+    "severity": {
+      "severity_score": 34.8,
+      "severity_label": "Severe",
+      "affected_area_percentage": 34.8,
+      "methodology": "HSV adaptive foliar lesion segmentation (13260/38102 px)"
+    },
+    "symptoms": "ఆకుల పైభాగంలో విసనకర్ర అంచుల వంటి నల్లటి గుండ్రటి మచ్చలు ఏర్పడతాయి. మచ్చల చుట్టూ ఆకు పసుపు రంగులోకి మారి వేగంగా రాలిపోతుంది. కొమ్మలు మోడువారిపోతాయి.",
+    "symptomsList": [
+      "Distinct circular black to dark-brown spots with irregular, feathery or fringed margins on upper leaf surfaces.",
+      "Foliage around the black spots turns chlorotic bright yellow, spreading outward from lesions.",
+      "Severe progressive leaf drop starting from lower branches and moving upward, leaving bare canes and stems.",
+      "Weakens plant vitality and stunts flowering and vegetative vigor."
+    ],
+    "managementAdvice": [
+      "రాలిపోయిన మరియు వ్యాధి సోకిన ఆకులను ఏరి వెంటనే కాల్చివేయండి.",
+      "మొక్కల అడుగుభాగపు కొమ్మలను కత్తిరించి గాలి, ఎండ ధారాళంగా తగిలేలా చూడండి.",
+      "ఆకులపై కాకుండా మొక్క మొదళ్ల వద్ద మాత్రమే ఉదయపు వేళల్లో నీరు పెట్టండి."
+    ],
+    "preventionAdvice": [
+      "తేమను మరియు మచ్చ తెగుళ్లను తట్టుకునే నాణ్యమైన విత్తనాలు లేదా రకాలను ఎంచుకోండి.",
+      "బేసిల్లస్ సబ్టిలిస్ లేదా పొటాషియం బైకార్బోనేట్ ద్రావణాన్ని ముందస్తుగా పిచికారీ చేయండి.",
+      "మొక్కల మధ్య తగినంత ఎడం ఉండేలా నాటండి."
+    ],
+    "chemicalGuidance": "లీటరు నీటికి 2 గ్రాముల క్లోరోథలోనిల్ (Chlorothalonil 75% WP) లేదా 1 గ్రాము మైక్లోబుటానిల్ (Myclobutanil 10% WP) లేదా 2.5 గ్రాముల మాంకోజెబ్ కలిపి 10-14 రోజుల వ్యవధిలో పిచికారీ చేయండి.",
+    "chemicalSafetyDisclaimer": "పిచికారీ చేసేటప్పుడు చేతి తొడుగులు మరియు కళ్లజోడు ధరించండి. తీవ్రమైన ఎండలో మందులు పిచికారీ చేయవద్దు.",
+    "sources": [
+      {
+        "title": "Identification and Integrated Control of Black Spot Disease",
+        "institution": "ICAR-IIHR (Indian Institute of Horticultural Research)",
+        "url": "https://iihr.icar.gov.in"
+      },
+      {
+        "title": "Horticultural Foliar Pathology Advisory",
+        "institution": "TNAU Horticulture Portal",
+        "url": "http://agritech.tnau.ac.in"
+      }
+    ],
+    "language": "te",
+    "environmentalContext": {
+      "inputs": {
+        "temperature": 29.5,
+        "humidity": 84,
+        "soilMoisture": 38,
+        "lightIntensity": 58000,
+        "canopyTemp": 28,
+        "leafWetness": 65,
+        "rainfall": 6,
+        "windSpeed": 3.2
+      },
+      "derived": {
+        "vpd": 0.66,
+        "vpdUnit": "kPa",
+        "vpdStatus": "Optimal",
+        "pathogenRiskScore": 81,
+        "pathogenRiskLevel": "Severe",
+        "soilStatus": "Optimal"
+      },
+      "attribution": {
+        "visualNeuralWeight": 85,
+        "environmentalWeight": 15,
+        "note": "Secondary contextual weighting (~15%) applied to environmental microclimate; primary classification strictly determined by deep vision neural model (85%)."
+      }
+    },
+    "modelName": "Groundnut MobileNetV3-Small",
+    "modelVersion": "groundnut-v1.0",
+    "datasetVersion": "Mendeley-22p2vcbxfk.3",
+    "isRealInference": true
+  }
+]

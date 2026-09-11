@@ -1,0 +1,160 @@
+{
+  "app_name": "AgroSense AI",
+  "app_subtitle": "AI Crop Doctor",
+  "tagline": "Snap a crop leaf. Diagnose diseases. Get authoritative treatment advice.",
+  "scan_crop": "Scan Crop Leaf",
+  "history": "History",
+  "dashboard": "Dashboard",
+  "about": "Technology & Science",
+  "field_twin": "3D Field Twin",
+  "conditions": {
+    "Healthy": {
+      "name": "Healthy Crop Leaf",
+      "scientificName": "Optimal Foliar Chlorophyll Integrity",
+      "badge": "Healthy Crop",
+      "summary": "The leaf shows healthy chloroplast pigmentation, uniform cellular turgor, and zero pathogen lesions or chlorotic mottling.",
+      "management": [
+        "No curative treatment needed.",
+        "Maintain regular irrigation, ensuring well-drained root-zone conditions without waterlogging.",
+        "Apply balanced NPK fertilization tailored to soil fertility analysis."
+      ],
+      "prevention": [
+        "Rotate fields every season with non-host crops to disrupt soil-borne pathogens.",
+        "Perform routine visual scouts once weekly, especially during humid spells."
+      ],
+      "chemicalGuidance": "No chemical intervention needed. Preserve beneficial natural microorganisms on the foliage.",
+      "safetyDisclaimer": "Avoid unneeded chemical sprays to protect helpful field insects and soil health."
+    },
+    "Early Leaf Spot": {
+      "name": "Early Leaf Spot (Cercospora)",
+      "scientificName": "Cercospora / Alternaria foliar complex",
+      "badge": "Fungal Infection",
+      "summary": "Subcircular necrotic lesions (1-10 mm) on leaf surface bordered by prominent chlorotic yellow halos, active under sustained humidity.",
+      "management": [
+        "Maintain adequate plant spacing to improve airflow through the crop canopy.",
+        "Rogue and safely destroy heavily infected bottom leaves during initial focal outbreaks.",
+        "Foliar spray with 5% Neem Seed Kernel Extract (NSKE) or Trichoderma harzianum formulation."
+      ],
+      "prevention": [
+        "Sow certified seeds treated with Trichoderma viride @ 4 g/kg or Thiram @ 3 g/kg seed.",
+        "Practice deep summer ploughing to bury old crop stubble and resting spores.",
+        "Follow a two-year crop rotation cycle with non-host crops."
+      ],
+      "chemicalGuidance": "Spray Mancozeb 75% WP @ 1000 g/ha (2-2.5 g/L water) or Carbendazim 50% WP @ 500 g/ha (1 g/L water) every 10-14 days upon early symptom onset.",
+      "safetyDisclaimer": "Use only locally registered fungicides. Strictly observe 15-day pre-harvest intervals and wear safety masks during application."
+    },
+    "Late Leaf Spot": {
+      "name": "Late Leaf Spot (Phaeoisariopsis)",
+      "scientificName": "Phaeoisariopsis personata / Nothopassalora spp.",
+      "badge": "Severe Fungal Disease",
+      "summary": "Dark brown to carbon-black circular lesions predominantly on the lower leaf surface, with minimal yellow halos, causing rapid canopy defoliation.",
+      "management": [
+        "Avoid night-time sprinkler irrigation which extends nocturnal leaf wetness periods.",
+        "Collect and destroy diseased crop debris post-harvest to reduce overwintering spore reservoirs.",
+        "Foliar bio-control spray with Pseudomonas fluorescens @ 2.5 kg/ha in 500 L water."
+      ],
+      "prevention": [
+        "Select disease-tolerant crop cultivars recommended by national research institutes.",
+        "Balance NPK fertilization; avoid excess nitrogen that creates dense, disease-prone canopies."
+      ],
+      "chemicalGuidance": "Spray Hexaconazole 5% EC @ 1000 ml/ha (2 ml/L water) or Chlorothalonil 75% WP @ 1000 g/ha (2 g/L) or Tebuconazole 25.9% EC @ 500-750 ml/ha.",
+      "safetyDisclaimer": "Wear protective chemical gloves and mask. Observe pre-harvest intervals."
+    },
+    "Rust": {
+      "name": "Foliar Rust Disease",
+      "scientificName": "Puccinia spp. / Uromyces foliar rust",
+      "badge": "Aggressive Fungal Rust",
+      "summary": "Dense clusters of raised reddish-brown pustules that rupture into powdery masses of airborne spores, causing curling, scorch, and heavy yield drop.",
+      "management": [
+        "Remove and safely burn severely infected plants from isolated infection foci.",
+        "Drain standing water immediately from field furrows to reduce humidity."
+      ],
+      "prevention": [
+        "Adopt rust-resistant or tolerant crop cultivars certified by agricultural universities.",
+        "Intercrop with tall cereals (sorghum, maize at 3:1 row ratio) as physical spore barrier crops."
+      ],
+      "chemicalGuidance": "Spray Tebuconazole 25.9% EC @ 500-750 ml/ha (1-1.5 ml/L water) or Propiconazole 25% EC @ 500 ml/ha (1 ml/L water).",
+      "safetyDisclaimer": "Wear protective chemical gloves and face mask during application. Observe pre-harvest withholding safety periods."
+    },
+    "Black Spot": {
+      "name": "Black Spot Disease",
+      "scientificName": "Diplocarpon rosae Wolf / Septoria foliar complex",
+      "badge": "Foliar Fungal Necrosis",
+      "summary": "Circular black spots with feathery or fringed borders surrounded by bright yellow chlorosis, causing progressive leaf drop and cane defoliation.",
+      "management": [
+        "Prune and safely discard all infected leaves and fallen debris; do not allow infected foliage to overwinter.",
+        "Prune lower stems to improve air circulation and prevent soil-splash spore transmission.",
+        "Switch strictly to ground-level or drip irrigation in the morning hours so foliage dries quickly."
+      ],
+      "prevention": [
+        "Select certified disease-tolerant varieties adapted to regional humidity.",
+        "Apply bio-fungicidal sprays with Bacillus subtilis or potassium bicarbonate solutions early in season.",
+        "Ensure generous spacing between plants to maximize sunlight exposure."
+      ],
+      "chemicalGuidance": "Spray Chlorothalonil 75% WP @ 2 g/L or Myclobutanil 10% WP @ 1 g/L or Mancozeb 75% WP @ 2.5 g/L at 10-14 day intervals during damp conditions.",
+      "safetyDisclaimer": "Wear chemical safety gloves and goggles. Avoid midday applications in strong sun to prevent foliar scorching."
+    },
+    "Downy Mildew - Mosaic": {
+      "name": "Downy Mildew & Mosaic Complex",
+      "scientificName": "Pseudoperonospora cubensis / Potyvirus foliar complex",
+      "badge": "Foliar Mildew & Viral Complex",
+      "summary": "Angular chlorotic patches bounded by leaf veins on upper leaf surfaces, with purplish-gray downy sporulation underneath, accompanied by mosaic vein clearing.",
+      "management": [
+        "Remove severely infected foliage immediately and dispose away from the field.",
+        "Water exclusively at soil level through drip lines to eliminate leaf wetness windows.",
+        "Manage sap-sucking insect vectors (aphids, whiteflies) with yellow sticky traps and 5% neem oil sprays."
+      ],
+      "prevention": [
+        "Plant certified hybrid cultivars with documented downy mildew and viral tolerance.",
+        "Eradicate wild weed hosts along field boundaries that harbor viral pathogens.",
+        "Maintain minimum 3-year crop rotation with non-cucurbit crops."
+      ],
+      "chemicalGuidance": "Foliar spray with Metalaxyl 8% + Mancozeb 64% WP @ 2.5 g/L or Cymoxanil 8% + Mancozeb 64% WP @ 2 g/L or Copper Oxychloride 50% WP @ 3 g/L.",
+      "safetyDisclaimer": "Rotate chemical families (FRAC groups) to prevent fungicide resistance. Observe pre-harvest withholding intervals."
+    },
+    "Nutrition Deficiency": {
+      "name": "Foliar Nutrient Deficiency",
+      "scientificName": "Abiotic Physiological Foliar Disorder",
+      "badge": "Nutrient Imbalance",
+      "summary": "Interveinal chlorosis, generalized leaf yellowing, or apical margin scorching caused by essential macro/micronutrient shortages in the root zone.",
+      "management": [
+        "Spray Ferrous Sulphate (FeSO4) @ 0.5% (5 g/L) + Citric Acid (1 g/L) twice at 10-day intervals for iron chlorosis.",
+        "Apply balanced 19:19:19 water-soluble NPK foliar spray @ 5 g/L for general vigor recovery.",
+        "Side-dress appropriate soil amendments (gypsum, compost) based on soil test results."
+      ],
+      "prevention": [
+        "Perform annual soil testing before planting to establish accurate baseline pH and nutrient profiles.",
+        "Incorporate well-decomposed farmyard manure or vermicompost @ 10-12 t/ha during soil preparation.",
+        "Avoid over-irrigation which leaches vital mobile nutrients past the root absorption zone."
+      ],
+      "chemicalGuidance": "Use specialized water-soluble micronutrient and fertilizer supplements. Do not apply chemical fungicides for physiological yellowing.",
+      "safetyDisclaimer": "Observe recommended dilution concentrations. Excessively concentrated foliar fertilizer sprays burn leaf margins."
+    }
+  },
+  "quality_messages": {
+    "blur": "The leaf photo is blurry or out of focus. Please hold the phone steady and capture a clear, sharp photo.",
+    "ood": "The photo does not contain a recognizable crop leaf. Please photograph a crop leaf directly.",
+    "retake": "Retake Leaf Photo"
+  },
+  "environmental_context": {
+    "title": "Environmental context adds information beyond appearance.",
+    "subtitle": "Microclimate parameters provide secondary context (15% weight) supporting authentic deep vision AI (85% weight).",
+    "manual_fill": "Manual Microclimate Parameters",
+    "click_to_edit": "Tap any pill to manually adjust or fill values",
+    "sensors": {
+      "temperature": { "label": "Temperature", "unit": "°C" },
+      "humidity": { "label": "Humidity", "unit": "%" },
+      "soilMoisture": { "label": "Soil Moisture", "unit": "%" },
+      "lightIntensity": { "label": "Light Intensity", "unit": "lux" },
+      "canopyTemp": { "label": "Canopy Temp", "unit": "°C" },
+      "leafWetness": { "label": "Leaf Wetness", "unit": "%" },
+      "rainfall": { "label": "Rainfall", "unit": "mm" },
+      "windSpeed": { "label": "Wind", "unit": "m/s" }
+    },
+    "contribution_label": "Contribution Breakdown",
+    "visual_weight_label": "Neural Vision AI (Primary)",
+    "env_weight_label": "Microclimate Context (Secondary)",
+    "vpd_label": "Vapor Pressure Deficit (VPD)",
+    "pathogen_risk_label": "Environmental Pathogen Favorability"
+  }
+}
