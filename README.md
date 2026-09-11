@@ -1,63 +1,48 @@
-# AgroSense AI - Groundnut Crop Health Diagnostic Suite
+# AgroSense AI — Real-World Multi-Crop Foliar Disease Diagnostics
 
-AgroSense AI is a mobile-first, full-stack intelligence system for groundnut crop protective diagnostics. It integrates localized environment readings (temperature, humidity, soil moisture, light intensity) with foliar imagery using a Multimodal Fusion projection model to determine crop health states, pathogen classifications, and recovery interventions.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaghavaAkkinepally-ARK/agrosense-ai)
 
-Implemented as a full-stack native mobile app target using **Vite, React 19, Capacitor, Express, and Multer**.
+**DeVert-A-Thon 2026 (Problem Statement DVPS07)**
+
+AgroSense AI is a production-grade, multi-crop plant disease intelligence suite designed for Indian agriculture. It combines state-of-the-art **MobileNetV3-Small deep learning inference (85% primary visual neural weight)** with a **bioclimatic microclimate attribution layer (15% secondary environmental weight)** across 8 calibrated microclimate parameters:
+- Ambient Temperature (°C)
+- Relative Humidity (%)
+- Soil Moisture Content (%)
+- Ambient Light / Lux (lx)
+- Foliar Canopy Temperature (°C)
+- Leaf Surface Wetness (0–15 Index)
+- Recent Precipitation / Rainfall (mm)
+- Surface Wind Velocity (km/h)
+
+The system features complete multilingual localization (English, Telugu, Hindi) with native voice synthesis audio playback.
+
+---
+
+## 🌟 Key Features
+
+1. **True AI Vision Model**: Trained on genuine leaf imagery across 7 distinct agricultural classes (Black Spot, Downy Mildew / Mosaic, Early Leaf Spot, Healthy Foliage, Late Leaf Spot, Nutrition Deficiency, Rust).
+2. **Dual Bioclimatic Attribution Engine**: Computes Vapor Pressure Deficit (VPD) and Pathogen Moisture Envelope Risk without altering the authoritative neural classification.
+3. **Multilingual Speech Synthesis**: Interactive voice readout of diagnostic guidance in English, Telugu, and Hindi.
+4. **Offline First Mobile APK**: Full Android release APK built with Capacitor.
+5. **1-Click Netlify / Vercel Deployment**: Pre-configured `netlify.toml`, `_redirects`, and `vercel.json`.
 
 ---
 
 ## Technical Architecture Overview
 
-- **Mobile Client**: React 19 powered by Vite compiled under Android Capacitor runtime shell.
-- **Express Backend Server**: Custom multipart REST endpoint handling image uploads via Multer and mock database transactions.
-- **Mock Database Store**: File-persistable JSON database storage (`server/db.json`) pre-salted with diagnostic history.
+- **Mobile & Web Client**: React 19 powered by Vite with Tailwind-inspired responsive mobile design.
+- **Node.js Express Gateway**: REST API managing uploads, historical persistence (`server/db.json`), and bioclimatic physics computation.
+- **Python ML Microservice**: Real-time PyTorch MobileNetV3-Small inference microservice running on port 5001.
 
 ---
 
-## Directory Schema structure
+## 🚀 1-Click Netlify Deployment
 
-```
-agrosense-ai/
-├── android/               # Native Android Studio Project shell generated via Capacitor CLI
-│   └── app/src/main/      # Permissions and native app configurations (AndroidManifest.xml)
-├── server/                # Multimodal Express API server & persistent storage
-│   ├── server.js          # REST server endpoints & HTTP listeners
-│   ├── aiService.js       # Multimodal Fusion Heuristics simulation logic
-│   └── db.json            # Database store registry
-├── src/                   # Client React Frontend source code
-│   ├── components/        # Layout and navigation wrappers
-│   ├── pages/             # Dashboard, Analysis Forms, Results, and History
-│   └── services/          # Client API fetch calls and environment selectors
-└── capacitor.config.json  # Capacitor app build orchestration targets
-```
+Click the button below to deploy this repository to Netlify:
 
----
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaghavaAkkinepally-ARK/agrosense-ai)
 
-## 1. Setup & Backend Installation
-
-To boot up the Express server backend (simulating the server engine on your local desktop/server environment):
-
-```bash
-# 1. Install workspace dependencies
-npm install
-
-# 2. Boot up the Express REST API backend
-node server/server.js
-```
-The server will bind to `localhost:3001` and expose endpoints for analysis diagnostic uploads at `/api/analyze`, database fetches at `/api/analyses`, and status polling checks at `/api/status`.
-
----
-
-## 2. API Environment Configurations
-
-For native Android devices or emulators to resolve network requests back to the local host machine, we configure base routing points:
-
-1. Look in the `.env` configuration file in the project folder root:
-   ```properties
-   VITE_API_BASE_URL=http://10.0.2.2:3001
-   ```
-   - **`http://10.0.2.2:3001`**: Standard emulator virtual loopback address connecting to the host machines' port `3001`.
-   - **`http://localhost:3001`**: For local web-only development.
+Or follow the quick manual deployment steps in Section 3.
    - **`http://<YOUR_LAN_IP>:3001`**: For physical Android USB testing connected to the same Wi-Fi router.
 
 2. React services resolve imports automatically using the built-in system selector:
